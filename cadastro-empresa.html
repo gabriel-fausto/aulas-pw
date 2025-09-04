@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de empresa</title>
+</head>
+
+<body>
+    <br><br>
+    <div align="center">
+        <Form action="menu.html" method="get">
+            <table border="2">
+                <tr>
+                    <td colspan="2" align="center" bgcolor="#f0f0f0">
+                        <h2>Dados da Empresa</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Razão social</td>
+                    <td><input type="text" name="txtRazaoSocial" maxlength="40" required></td>
+                </tr>
+                <tr>
+                    <td align="right">CNPJ</td>
+                    <td><input type="txt" name="txtCNPJ" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Telefone</td>
+                    <td><input type="tel" name="txtTel" required></td>
+                </tr>
+                <tr>
+                    <td align="right">Estado</td>
+                    <td>
+                        <select name="estado" required>
+                            <option value="">Selecione...</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><br>
+                        <input type="submit" value="Salvar Empresa">
+                        <input type="reset" value="Limpar Campos"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <a href="menu.html">Voltar ao Menu</a>
+                    </td>
+                </tr>
+            </table>
+        </Form>
+    </div>
+</body>
+
+</html>
