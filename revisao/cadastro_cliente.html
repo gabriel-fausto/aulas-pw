@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Cliente</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container topo">
+            <h1>Cadastros</h1>
+            <nav aria-label="Principal">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="#Cadastro">Cadastros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <div class="form-grid2">
+                <div>
+                    <label for="txtNome">Nome Completo *</label>
+                    <input type="text" name="txtNome" required minlength="10" placeholder="Ex: Maria João">
+                </div>
+                <div>
+                    <label for="txtEmail">Email *</label>
+                    <input type="email" name="txtEmail" required placeholder="Ex: maria@gmail.com">
+                </div>
+                <div>
+                    <label for="txtSenha">Senha *</label>
+                    <input type="password" name="txtSenha" required minlength="6" maxlength="8">
+                </div>
+                <div>
+                    <label for="txtSenhaConfirmar">Confirmar Senha *</label>
+                    <input type="password" name="txtSenhaConfirmar" required minlength="6" maxlength="8">
+                </div>
+                <div>
+                    <label for="txtNascimento">Data de nascimento *</label>
+                    <input type="date" name="txtNascimento" required>
+                </div>
+                <div>
+                    <label for="txtTelefone">Telefone *</label>
+                    <input type="tel" name="txtTelefone" required placeholder="(11)99999-9999">
+                </div>
+                <div>
+                    <label for="txtTelefone">Telefone</label>
+                    <input type="tel" name="txtTelefone" placeholder="(11)99999-9999">
+                </div>
+                <div>
+                    <label for="selEstado">Estado</label>
+                    <select name="selEstado" id="selEstado" required>
+                        <option value="">Selecione...</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="BA">Bahia</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Preferencias</label>
+                    <div class="input-composto">
+                        <input type="checkbox" name="noticias">
+                        <label>Receber noticias</label>
+                    </div>
+                    <div class="input-composto">
+                        <input type="checkbox" name="termo">
+                        <label>Aceitar termo</label>
+                    </div>
+                </div>
+                <div>
+                    <label>Gênero</label>
+                    <div class="input-composto">
+                        <input type="radio" name="genero" value="M">
+                        <label>Masculino</label>
+                    </div>
+                    <div class="input-composto">
+                        <input type="radio" name="genero" value="F">
+                        <label>Feminino</label>
+                    </div>
+                    <div class="input-composto">
+                        <input type="radio" name="genero" value="O">
+                        <label>Outros</label>
+                    </div>
+                </div>
+            </div>
+            <p>
+                <button type="submit">Salvar</button>
+                <button class="btn-alt" type="reset">Limpar</button>
+                <a class="btn btn-alt" href="cadastro.html">Voltar</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <small>&copy; Senac, 2025.</small>
+        </div>
+    </footer>
+</body>
+</html>
