@@ -1,102 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Cliente</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
-    <header>
-        <div class="container topo">
-            <h1>Cadastros</h1>
-            <nav aria-label="Principal">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="#Cadastro">Cadastros</a></li>
-                </ul>
-            </nav>
+    <div class="page-container">
+        <div class="content-wrap">
+
+            <header>
+                <div class="container topo">
+                    <h1>Cadastros</h1>
+                    <nav aria-label="Principal">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="#Cadastro">Cadastros</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main class="container">
+                <form action="#" method="post">
+                    <div class="caixa">
+                        <div class="form-grid2">
+                            <div>
+                                <label for="txtNome">Nome Completo *</label>
+                                <input class="input-foco" type="text" id="txtNome" required minlength="10"
+                                    placeholder="Ex: Maria João">
+                            </div>
+                            <div>
+                                <label for="txtEmail">Email *</label>
+                                <input class="input-foco" type="email" id="txtEmail" required
+                                    placeholder="Ex: maria@gmail.com">
+                            </div>
+                            <div>
+                                <label for="txtSenha">Senha *</label>
+                                <input class="input-foco" type="password" id="txtSenha" required minlength="6"
+                                    maxlength="8">
+                            </div>
+                            <div>
+                                <label for="txtSenhaConfirmar">Confirmar Senha *</label>
+                                <input class="input-foco" type="password" id="txtSenhaConfirmar" required minlength="6"
+                                    maxlength="8">
+                            </div>
+                            <div>
+                                <label for="txtNascimento">Data de nascimento *</label>
+                                <input class="input-foco" type="date" id="txtNascimento" required>
+                            </div>
+                            <div>
+                                <label for="txtTelefone">Telefone *</label>
+                                <input class="input-foco" type="tel" id="txtTelefone" required
+                                    placeholder="(11)99999-9999">
+                            </div>
+                            <div>
+                                <label for="selEstado">Estado</label>
+                                <select class="input-foco" id="selEstado" required>
+                                    <option value="">Selecione...</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="EX">Estrangeiro</option>
+                                </select>
+                            </div>
+                            <br>
+                            <div>
+                                <label>Preferencias</label>
+                                <div class="input-composto">
+                                    <input type="checkbox" id="noticias">
+                                    <label>Receber noticias</label>
+                                </div>
+                                <div class="input-composto">
+                                    <input type="checkbox" id="termo">
+                                    <label>Aceitar termo</label>
+                                </div>
+                            </div>
+                            <div>
+                                <label>Gênero</label>
+                                <div class="input-composto">
+                                    <input type="radio" name="genero" value="M">
+                                    <label>Masculino</label>
+                                </div>
+                                <div class="input-composto">
+                                    <input type="radio" name="genero" value="F">
+                                    <label>Feminino</label>
+                                </div>
+                                <div class="input-composto">
+                                    <input type="radio" name="genero" value="O">
+                                    <label>Outros</label>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <button type="submit">Salvar</button>
+                            <button class="btn-alt" type="reset">Limpar</button>
+                            <a class="btn btn-alt" href="cadastro.html">Voltar</a>
+                        </p>
+                    </div>
+                </form>
+            </main>
+
         </div>
-    </header>
-    <main class="container">
-        <section>
-            <div class="form-grid2">
-                <div>
-                    <label for="txtNome">Nome Completo *</label>
-                    <input type="text" name="txtNome" required minlength="10" placeholder="Ex: Maria João">
-                </div>
-                <div>
-                    <label for="txtEmail">Email *</label>
-                    <input type="email" name="txtEmail" required placeholder="Ex: maria@gmail.com">
-                </div>
-                <div>
-                    <label for="txtSenha">Senha *</label>
-                    <input type="password" name="txtSenha" required minlength="6" maxlength="8">
-                </div>
-                <div>
-                    <label for="txtSenhaConfirmar">Confirmar Senha *</label>
-                    <input type="password" name="txtSenhaConfirmar" required minlength="6" maxlength="8">
-                </div>
-                <div>
-                    <label for="txtNascimento">Data de nascimento *</label>
-                    <input type="date" name="txtNascimento" required>
-                </div>
-                <div>
-                    <label for="txtTelefone">Telefone *</label>
-                    <input type="tel" name="txtTelefone" required placeholder="(11)99999-9999">
-                </div>
-                <div>
-                    <label for="txtTelefone">Telefone</label>
-                    <input type="tel" name="txtTelefone" placeholder="(11)99999-9999">
-                </div>
-                <div>
-                    <label for="selEstado">Estado</label>
-                    <select name="selEstado" id="selEstado" required>
-                        <option value="">Selecione...</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="BA">Bahia</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                    </select>
-                </div>
-                <div>
-                    <label>Preferencias</label>
-                    <div class="input-composto">
-                        <input type="checkbox" name="noticias">
-                        <label>Receber noticias</label>
-                    </div>
-                    <div class="input-composto">
-                        <input type="checkbox" name="termo">
-                        <label>Aceitar termo</label>
-                    </div>
-                </div>
-                <div>
-                    <label>Gênero</label>
-                    <div class="input-composto">
-                        <input type="radio" name="genero" value="M">
-                        <label>Masculino</label>
-                    </div>
-                    <div class="input-composto">
-                        <input type="radio" name="genero" value="F">
-                        <label>Feminino</label>
-                    </div>
-                    <div class="input-composto">
-                        <input type="radio" name="genero" value="O">
-                        <label>Outros</label>
-                    </div>
-                </div>
+        <footer>
+            <div class="container">
+                <small>&copy; Senac, 2025.</small>
             </div>
-            <p>
-                <button type="submit">Salvar</button>
-                <button class="btn-alt" type="reset">Limpar</button>
-                <a class="btn btn-alt" href="cadastro.html">Voltar</a>
-            </p>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <small>&copy; Senac, 2025.</small>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
+
 </html>

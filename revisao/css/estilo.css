@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgb(253, 248, 248);
+    background: #fff;
 }
 
 .page-container {
@@ -16,11 +16,12 @@ body {
 
 .content-wrap {
     flex-grow: 1;
+    padding-bottom: 2.5rem;
 }
 
 footer {
     width: 100%;
-    height: 2.5rem; /* Footer height */
+    height: 2.5rem;
     background: #555;
     padding: 12px 12px;
     color: #fafafa;
@@ -33,7 +34,7 @@ footer {
 }
 
 header {
-    background: indianred;
+    background: #ae3d3d;
     color: #fff;
 }
 
@@ -68,12 +69,12 @@ nav a {
     margin-left: 8px;
     padding: 8px 12px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, .15);
+    background: #ffffff26;
     color: #fff;
     font-weight: 600;
 
     &:hover {
-        background: rgba(255, 255, 255, .25);
+        background: #ffffff40;
     }
 }
 
@@ -81,15 +82,17 @@ main {
     flex-grow: 1;
 }
 
-section {
+section,
+form {
     padding: 20px 0;
 }
 
 .caixa {
-    background: #fff;
+    background: #fdf8f8;
     border: 1px solid #a3a3a3;
     border-radius: 8px;
     padding: 24px 16px;
+    box-shadow: 1px 1px 1px #0000001a;
 }
 
 .caixa h2 {
@@ -107,10 +110,11 @@ table {
 th,
 td {
     border-bottom: 1px solid #555;
+    padding: 8px;
 }
 
 th {
-    background: #f3f4f6;
+    background: #ecedee;
     font-weight: 600;
 }
 
@@ -120,6 +124,12 @@ th {
 
 .form-grid2 {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+
+    @media (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
 }
 
 label {
@@ -134,9 +144,20 @@ select,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #444;
+    border: 1px solid #bbbbbb;
     border-radius: 8px;
     color: #000;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    accent-color: #ae3d3d;
+}
+
+.input-foco:focus {
+    border-color: #686868;
+    outline: none;
+    box-shadow: 0 0 3px #686868;
 }
 
 button,
@@ -149,20 +170,20 @@ button,
     cursor: pointer;
     font-size: 16px;
     text-decoration: underline;
-    border: 1px solid rgb(226, 121, 121);
+    border: 1px solid #e27979;
     margin-right: 10px;
 
     &:hover {
-        background: #e57575;
+        background: indianred;
     }
 }
 
 .btn-alt {
     background: #fff;
-    color: lightcoral;
+    color: #f08080;
 
     &:hover {
-        background: #f9f9f9;
+        background: #f6f6f6;
     }
 }
 
