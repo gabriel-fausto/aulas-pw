@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de consultas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+            <header>
+                <div class="container topo">
+                    <h1>Rede Dorival</h1>
+                    <nav aria-label="Principal">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="cadastro-paciente.html">Cad. Paciente</a></li>
+                            <li><a href="cadastro-medico.html">Cad. Médico</a></li>
+                            <li><a class="active" href="agenda-consultas.html">Ag. Consulta</a></li>
+                            <li><a href="index.html">sair</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main class="container">
+                <section id="Introducao">
+                    <div class="caixa">
+                        <h2>Agenda de consultas</h2>
+                        <hr>
+                        <div class="filtro">
+                            <select class="input-foco" name="selMedico" id="selMedico">
+                                <option value="Selecione">Médico</option>
+                            </select>
+                            <select class="input-foco" name="selStatus" id="selStatus">
+                                <option value="Selecione">Status</option>
+                            </select>
+                            <button>Filtrar</button>
+                        </div>
+                        <br>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Horário</th>
+                                    <th>Paciente</th>
+                                    <th>Médico</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="odd">
+                                    <td>01/10/2025</td>
+                                    <td>10:00 - 11:30</td>
+                                    <td>Paulo Silva</td>
+                                    <td>Dr. André Ricardo</td>
+                                    <td>Agendado</td>
+                                </tr>
+                                <tr>
+                                    <td>02/10/2025</td>
+                                    <td>10:00 - 11:30</td>
+                                    <td>Gabriel Rodrigues</td>
+                                    <td>Dr. Pedro Cerrado</td>
+                                    <td>Agendado</td>
+                                </tr>
+                                <tr class="odd">
+                                    <td>03/10/2025</td>
+                                    <td>10:00 - 11:30</td>
+                                    <td>Sérgio Matos</td>
+                                    <td>Dr. Victor Lauro</td>
+                                    <td>Cancelado</td>
+                                </tr>
+                                <tr>
+                                    <td>03/10/2025</td>
+                                    <td>10:00 - 11:30</td>
+                                    <td>Thamires Santos</td>
+                                    <td>Dra. Ana Paula</td>
+                                    <td>Agendado</td>
+                                </tr>
+                                <tr class="odd">
+                                    <td>04/10/2025</td>
+                                    <td>10:00 - 11:30</td>
+                                    <td>Fabiola Carvalho</td>
+                                    <td>Dr. Sandro Matias</td>
+                                    <td>Pré Agendado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p><a class="ancora" href="cadastro-paciente.html">Cadastro de paciente</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="ancora" href="home.html">Home</a></p>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="container">
+                <small>&copy; Gabriel Rodrigues Fausto, 2025.</small>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

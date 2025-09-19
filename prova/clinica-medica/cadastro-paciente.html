@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="page-container">
+        <div class="content-wrap">
+            <header>
+                <div class="container topo">
+                    <h1>Rede Dorival</h1>
+                    <nav aria-label="Principal">
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a class="active" href="cadastro-paciente.html">Cad. Paciente</a></li>
+                            <li><a href="cadastro-medico.html">Cad. Médico</a></li>
+                            <li><a href="agenda-consultas.html">Ag. Consulta</a></li>
+                            <li><a href="index.html">sair</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main class="container">
+                <section id="Introducao">
+                    <div class="caixa">
+                        <h2>Cadastro de paciente</h2>
+                        <p>Essas informações serão utilizadas durante todo o tratamento do paciente, preencha com
+                            cuidado.</p>
+                        <hr>
+                        <form action="#">
+                            <div class="form-grid2">
+                                <fieldset>
+                                    <legend>Nome Completo *</legend>
+                                    <input class="input-foco" type="text" id="txtNome" required
+                                        placeholder="Ex: Maria João">
+                                </fieldset>
+                                <fieldset>
+                                    <legend>CPF *</legend>
+                                    <input class="input-foco" type="text" id="txtCPF" required
+                                        placeholder="Ex: 123.456.789-09">
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Data de nascimento *</legend>
+                                    <input class="input-foco" type="date" id="txtDtNasc" required>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Telefone *</legend>
+                                    <input class="input-foco" type="tel" id="txtTelefone" required>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>E-mail *</legend>
+                                    <input class="input-foco" type="email" id="txtEmail" required>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Endereço *</legend>
+                                    <textarea class="input-foco" name="txtEndereco" id="txtEndereco"
+                                        required></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <legend>Convênio</legend>
+                                    <select class="input-foco" id="selConvenio">
+                                        <option value="">Selecione...</option>
+                                        <option value="Particular">Particular</option>
+                                        <option value="Unimed">Unimed</option>
+                                        <option value="Bradesco">Bradesco</option>
+                                        <option value="Amil">Amil</option>
+                                        <option value="SUS">SUS</option>
+                                    </select>
+                                </fieldset>
+                                <br>
+                                <fieldset class="input-composto">
+                                    <input type="checkbox" id="NEspeciais">
+                                    <label>Necessidades especiais</label>
+                                </fieldset>
+                            </div>
+                            <p>
+                                <button type="submit">Salvar</button>
+                                <button class="btn-alt" type="reset">Limpar</button>
+                            </p>
+                        </form>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <footer>
+            <div class="container">
+                <small>&copy; Gabriel Rodrigues Fausto, 2025.</small>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
